@@ -1,0 +1,23 @@
+.eventFixedBar{
+    width:940px;
+    position: fixed;
+    z-index:100;
+}
+
+.eventFixedBar .btn-toolbar{
+    padding:0;
+    margin:0;
+}
+
+
+.event .span3:hover,.span6:hover{
+    background-color: ghostwhite;
+}
+
+.event label{
+    color:darkseagreen;
+}
+
+.event .row{
+    border-bottom: ghostwhite inset;
+}

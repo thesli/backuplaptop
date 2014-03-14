@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "myscript.js",
+  "sourceRoot": "",
+  "sources": [
+    "myscript.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;CAAA;CAAA"
+}

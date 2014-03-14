@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="/app/css/partials/event.css"/>
+
+<div class="eventFixedBar">
+    <div class="btn-toolbar">
+        <div class="btn-group">
+            <button class="btn">
+                Add Event
+            </button>
+            <botton class="btn">Sort</botton>
+        </div>
+    </div>
+</div>
+
+<div class="fixBar-offset event">
+    <div class="row">
+    <span class="span6">
+        <label for="">
+            Available Event
+        </label>
+        <div ng-repeat="event in allEvent">
+            <a href="/#/events/info/{{ event._id }}">{{event.name}}</a>
+            <span style="float:right;clear:both;"><b><u>
+                {{ event.distanceFromUser + "m" }}</u> </b>from you</span>
+        </div>
+    </span>
+    <span class="span5">
+        <label for="">
+            Past Event
+        </label>
+    </span>
+    </div>
+    <!--<div class="row">-->
+
+    <!--</div>-->
+</div>

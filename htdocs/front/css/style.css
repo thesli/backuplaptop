@@ -1,0 +1,9 @@
+a{
+	color:green;
+	background-color: yellow;
+}
+a>span{
+	height:10%;
+	width:10%;
+	font-size: 2em;
+}

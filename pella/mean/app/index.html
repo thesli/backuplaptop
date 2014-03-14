@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <title>PELLA</title>
+    <link rel="stylesheet" href="/app/vendor/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/app/vendor/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/app/vendor/css/angular-chosen.css"/>
+    <link rel="stylesheet" href="/app/vendor/css/sticky.css"/>
+    <link rel="stylesheet" href="/app/css/app.css"/>
+    <link rel="stylesheet" href="/app/vendor/css/fullcalendar.css"/>
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button class="btn btn-navbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li><a href="/#/selectUser">Select User</a></li>
+                    <li><a href="/#/events">Events</a></li>
+                    <li><a href="/#/about">About</a></li>
+                    <li><a href="mailto:sliv.phone@gmail.com">Contact</a></li>
+                </ul>
+                <!--<form class="navbar-form pull-right">-->
+                <!--<input class="span2" type="text" placeholder="Username"/>-->
+                <!--<input class="span2" type="password" placeholder="Password">-->
+                <!--<button class="btn">Sign In</button>-->
+                <!--</form>-->
+
+                <a href="/#/user/{{ currentUser._id }}">
+                    <div class="userBanner" ng-if="currentUser!=null">
+                        <img src="/app/img/icon/{{ currentUser.profilePic }}" alt=""/>
+                        {{ currentUser.name }}
+                    </div>
+                </a>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="topBar-offset">
+    <div class="container">
+        <div class="row">
+            <ng-view></ng-view>
+        </div>
+    </div>
+</div>
+
+
+<div class="chatBar" ng-controller="chatCtrl">
+    <div class="chatInner">
+        {{ abc }}
+        <h5></h5>
+
+        <div class="chatList"></div>
+        <div class="chatBottom"></div>
+    </div>
+</div>
+
+
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+-->
+<!--misc stuff-->
+
+<script type="text/javascript" src="/app/vendor/js/underscore.min.js"></script>
+<!--misc stuff-->
+<!--IO stuff-->
+<script type="text/javascript" src="/app/vendor/js/socket.io.min.js"></script>
+<script type="text/javascript">
+    var t = io.connect("http://pella.sytes.net:8888");
+</script>
+<!--IO stuff-->
+
+<!--jquery depended stuff-->
+<script type="text/javascript" src="app/vendor/js/jquery.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/app/vendor/js/gmap3.min.js"></script>
+<script type="text/javascript" src="/app/vendor/js/sticky.js"></script>
+<script type="text/javascript" src="/app/vendor/js/fullcalendar.min.js"></script>
+<script type="text/javascript" src="/app/vendor/js/qrcode.jquery.js"></script>
+<!--jquery depended stuff-->
+
+<!--angular depended stuff-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+<script src="http://code.angularjs.org/1.0.0rc10/angular-cookies-1.0.0rc10.js"></script>
+<script src="/app/vendor/js/angular/angular-resource.js"></script>
+<script src="/app/js/app.js"></script>
+<script src="/app/js/services.js"></script>
+<script src="/app/js/controllers.js"></script>
+<script src="/app/js/filters.js"></script>
+<script src="/app/js/directives.js"></script>
+<script type="text/javascript" src="/app/vendor/js/angular-chosen.js"></script>
+<!--angular depended stuff-->
+<!--misc Stuff-->
+<script type="text/javascript" src='http://maps.google.com/maps/api/js?sensor=false'></script>
+<script type="text/javascript" src="/app/vendor/js/sprintf.js"></script>
+<!--misc Stuff-->
+</body>
+</html>

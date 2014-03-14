@@ -1,0 +1,14 @@
+!!! 5
+html(ng-app="pella")
+	head
+		script(src="../vendor/js/use.js")
+		script(src="../js/use.js")
+		link(href="../vendor/css/combine.css",rel="stylesheet")
+		link(href="../css/combine.css",rel="stylesheet")
+		script(src="http://192.168.1.111:35729/livereload.js")
+	body
+		.try(ng-controller="inputCtrl")
+			input(placeholder="just gonna try" value="{{abc}}")
+			p {{ abc }}
+			p do something
+

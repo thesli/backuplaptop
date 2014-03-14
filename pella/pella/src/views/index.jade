@@ -1,0 +1,51 @@
+!!! 5
+html
+  head
+    meta(charset='utf-8')
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title node-coffee-angular-require-bootstrap-bower-grunt-seed
+
+    link(rel='stylesheet', type='text/css', href='/components/components-bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='/style/style.css')
+    script(data-main='js/main', src='/components/requirejs/require.js')
+
+body(ng-controller='AppCtrl')
+  .navbar.navbar-inverse.navbar-fixed-top
+    .navbar-inner
+      .container-fluid
+        a.brand(href='/', ng-cloak) node-coffee-angular-require-bootstrap-bower-grunt-seed
+  .container-fluid
+    .row-fluid
+      .span12
+        h1 add a hello world over here
+        h2 ng-view
+        p.text-center
+          .btn-group
+            a.btn(href='/') /
+            a.btn(href='/view1') /view1
+            a.btn(href='/view2') /view2
+            a.btn(href='/view3') /view3
+        div(ng-view)
+    .row-fluid
+      .span6(ng-controller='SocketCtrl')
+        h2 Socket.io Events 1
+        p.text-center
+          .btn-group
+            button.btn(ng-click="start()") Start
+            button.btn(ng-click="stop()") Stop
+        .alert.text-center(ng-hide="messages.length") No Data
+        table.table.table-condensed.table-bordered.table-striped.table-hover(ng-cloak, ng-show="messages.length")
+          tr(ng-repeat="message in messages | orderBy:'date':true | limitTo:5")
+            td {{ message.date | date:'medium' }}
+            td {{ message.data }}
+      .span6(ng-controller='SocketCtrl')
+        h2 Socket.io Events 2
+        p.text-center
+          .btn-group
+            button.btn(ng-click="start()") Start
+            button.btn(ng-click="stop()") Stop
+        .alert.text-center(ng-hide="messages.length") No Data
+        table.table.table-condensed.table-bordered.table-striped.table-hover(ng-cloak, ng-show="messages.length")
+          tr(ng-repeat="message in messages | orderBy:'date':true | limitTo:5")
+            td {{ message.date | date:'medium' }}
+            td {{ message.data }}

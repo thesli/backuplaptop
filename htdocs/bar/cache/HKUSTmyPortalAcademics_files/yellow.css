@@ -1,0 +1,94 @@
+/* Tab Bar */
+.myvt-page-yellow #tab-bar {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/yellow/tab_base_t.gif);
+}
+.myvt-page-yellow .myvt-tab-inactive, .myvt-page-yellow #myvt-tab-base-focused {
+	border-bottom-color: #BD9657; 
+}
+.myvt-page-yellow #tab-base {
+	background-color: #D5A559;
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/yellow/tab_base_bg.gif);
+}
+.myvt-page-yellow #left-column, .myvt-page-yellow #shared-column-spacer, .myvt-page-yellow #shared-column-border-bottom {
+	background-color: #D5A559;
+}
+.myvt-page-yellow #shared-column-border-bottom {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/yellow/sc_b.gif);
+}
+.myvt-page-yellow #shared-column {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/yellow/sc_r.gif);
+}
+.myvt-page-yellow #tab-toolbar {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/yellow/tab_toolbar_bg.gif);
+	border-bottom-color: #E5C085;
+	background-color: #FAD9A5;
+}
+.myvt-page-yellow #tab-breadcrumbs {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/yellow/tab_toolbar_tl.gif);
+}
+.myvt-page-yellow #greeting {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/yellow/my_vt_logo_bottom.gif);
+}
+.myvt-page-yellow .myvt-channel-titlebar {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/yellow/channel_titlebar_tl.gif);
+	background-color: #EDC688;
+	border-bottom-color: #E5C085;
+}
+.myvt-page-yellow .myvt-channel-titlebar table {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/yellow/channel_titlebar_tr.gif);
+}
+.myvt-page-yellow .myvt-channel-border-tl {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/yellow/channel_tl.gif);
+}
+.myvt-page-yellow .myvt-channel-border-tr {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/yellow/channel_tr.gif);
+}
+.myvt-page-yellow .myvt-channel-border-bl {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/yellow/channel_bl.gif);
+}
+.myvt-page-yellow .myvt-channel-border-br {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/yellow/channel_br.gif);
+}
+.myvt-page-yellow #shared-column .myvt-channel-titlebar {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/yellow/sc_channel_titlebar_tl.gif);
+}
+.myvt-page-yellow #shared-column .myvt-channel-titlebar table {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/yellow/sc_channel_titlebar_tr.gif);
+}
+.myvt-page-yellow #shared-column .myvt-channel-border-tl {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/yellow/sc_channel_tl.gif);
+}
+.myvt-page-yellow #shared-column .myvt-channel-border-tr {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/yellow/sc_channel_tr.gif);
+}
+.myvt-page-yellow #shared-column .myvt-channel-border-bl {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/yellow/sc_channel_bl.gif);
+}
+.myvt-page-yellow #shared-column .myvt-channel-border-br {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/yellow/sc_channel_br.gif);
+}
+
+/* Subtabs */
+.myvt-page-yellow #subtabs-border-bottom {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/yellow/subtabs_br.gif);
+}
+.myvt-page-yellow #subtabs-container {
+	background-color: #D5A559;
+}
+.myvt-page-yellow #subtabs-heading {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/yellow/subtabs_tr.gif);
+}
+.myvt-page-yellow #subtabs-items .subtabs-items-first {
+	background: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/yellow/subtabs_tl.gif);
+	border-bottom: 1px solid #BD9657;
+}
+.myvt-page-yellow #subtabs-items .subtabs-items-inactive {
+	background-color: #FAD9A5;
+	border-right: 1px solid #BD9657;
+}
+.myvt-page-yellow #subtabs-items .subtabs-items-last {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/yellow/subtabs_bl.gif);
+}
+.myvt-page-yellow #subtabs-items .subtabs-items-middle {
+	border-bottom: 1px solid #BD9657; border-left: 1px solid #BD9657;
+}

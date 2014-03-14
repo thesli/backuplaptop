@@ -1,0 +1,75 @@
+<link rel="stylesheet" href="/app/css/partials/userInfo.css"/>
+<span>{{ getUserData() }}</span>
+
+<div class="userInfoFixedBar">
+    <div class="btn-toolbar">
+        <div class="btn-group">
+            <button class="btn" id="loginAsUserButton" ng-click="loginAsUser()" ng-if="currentUser._id!=userInfo._id"><i
+                    class="icon-long-arrow-right"></i> Login
+            </button>
+            <botton class="btn" ng-if="currentUser._id==userInfo._id"><i class="icon-refresh"></i> Update</botton>
+        </div>
+        <div class="btn-group">
+            <button class="btn" ng-if="currentUser._id!=userInfo._id"><i class="icon-plus"></i> Add Friend</button>
+            <button class="btn"><i class="icon-comment"></i> Message</button>
+            <button class="btn"><i class="icon-calendar"></i> Event</button>
+        </div>
+        <div class="btn-group">
+            <button class="btn" ng-if="currentUser._id==userInfo._id" ng-click="deleteUser()"><i class="icon-remove"></i>Delete User</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="fixBar-offset">
+    <div class="userInfo">
+        <div class="container">
+            <div class="row">
+                <a href="/#/user/{{ userInfo._id }}">
+            <span class="span3">
+                <span><img src="/app/img/icon/{{ userInfo.profilePic }}" alt=""/></span>
+                <span>{{ userInfo.name }}</span>
+            </span>
+                </a>
+                <span class="span6">
+                    <label>Friends:</label>
+                    <div ng-repeat="fd in userInfo.friends">{{ fd.name }}</div>
+                </span>
+            </div>
+            <div class="row">
+                <span class="span3"><label>Age:</label>{{ userInfo.age }}</span>
+                <span class="span3"><label>Company:</label>{{ userInfo.company }}</span>
+                <span class="span3"><label>Email:</label><a href="mailto:{{ userInfo.email }}">{{ userInfo.email }}</a></span>
+                <span class="span3"></span>
+            </div>
+            <div class="row">
+                <span class="span3"><label>Address:</label>{{ userInfo.address }}</span>
+                <span class="span3"><label>Balance:</label>{{ userInfo.balance }}</span>
+                <span class="span3"><label>Gender:</label>{{ userInfo.gender }}</span>
+            </div>
+            <div class="row">
+                <span class="span3"><label>Phone:</label>{{ userInfo.phone }}</span>
+                <span class="span3"><label>Registered:</label>{{ userInfo.registered }}</span>
+                <span class="span3"><label>_id:</label>{{ userInfo._id }}</span>
+            </div>
+            <div class="row">
+              <span class="span3">
+                  <label for="">Location:</label><u>{{ gpsAddress }}</u>
+                <div class="googlemap"></div>
+                  <strong>{{ distanceBetween }}m</strong> from you
+              </span>
+              <span class="span3">
+                  <label for="">About:</label>
+                  {{ userInfo.about }}
+              </span>
+            </div>
+            <div class="row">
+                <span class="span12"><label>Events:</label>
+                    <fullcal event="userInfo.event"></fullcal>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+

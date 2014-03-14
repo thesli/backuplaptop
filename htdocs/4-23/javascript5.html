@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="k1">
+<h1 id="lol">This is someShit to be removed</h1>
+<h1 id="pc">gdsfsdfs</h1>
+</div>
+</body>
+<script type="text/javascript">
+
+function addNew(){
+	var m1 = document.createElement("h1");
+	var p1 = document.createTextNode("text:23231");
+	m1.appendChild(p1);
+	var k1 = document.getElementById("k1");
+	k1.appendChild(m1);
+}
+addNew();
+
+function removeStuff(){
+	var m1 = document.getElementById("k1");
+	var m2 = document.getElementsByTagName("h1")[1];
+	var m3 = document.getElementById("lol");
+	m1.removeChild(m2);
+	m1.removeChild(m3);
+}
+
+var pc =document.getElementById("pc");
+pc.parentNode.removeChild(pc);
+
+
+// removeStuff();
+</script>
+
+</html>

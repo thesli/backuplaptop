@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "testQRcode.js",
+  "sourceRoot": "",
+  "sources": [
+    "testQRcode.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;CAAA,CAAA,CAAA,IAAO;;CAAP,CAEA,CACE,GADF,CAAO,EAAP,OACE;CACmB,CAEjB,CAAA,KAAA,CAFA,EAAA,KAAgB;EAGP,CAAP,EAAA,EAAA,EAAC,IAAD;CACQ,EACJ,EADG,CAAL,GACG,MADH;CAEU,IAAD,EAAL,UAAA;CAFJ,QACE;CAHN,MACE;CAHF,IAEA;CAJJ,EACE;CAHF"
+}

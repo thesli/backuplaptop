@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>node-coffee-angular-require-bootstrap-bower-grunt-seed</title>
+    <link rel="stylesheet" type="text/css" href="/components/components-bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/style/style.css">
+    <script data-main="js/main" src="/components/requirejs/require.js"></script>
+  </head>
+</html>
+<body ng-controller="AppCtrl">
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid"><a href="/" ng-cloak class="brand">node-coffee-angular-require-bootstrap-bower-grunt-seed</a></div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span12">
+        <h1>add a hello world over here</h1>
+        <h2>ng-view</h2>
+        <p class="text-center">
+          <div class="btn-group"><a href="/" class="btn">/</a><a href="/view1" class="btn">/view1</a><a href="/view2" class="btn">/view2</a><a href="/view3" class="btn">/view3</a></div>
+        </p>
+        <div ng-view></div>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div ng-controller="SocketCtrl" class="span6">
+        <h2>Socket.io Events 1</h2>
+        <p class="text-center">
+          <div class="btn-group">
+            <button ng-click="start()" class="btn">Start</button>
+            <button ng-click="stop()" class="btn">Stop</button>
+          </div>
+        </p>
+        <div ng-hide="messages.length" class="alert text-center">No Data</div>
+        <table ng-cloak ng-show="messages.length" class="table table-condensed table-bordered table-striped table-hover">
+          <tr ng-repeat="message in messages | orderBy:'date':true | limitTo:5">
+            <td>{{ message.date | date:'medium' }}</td>
+            <td>{{ message.data }}</td>
+          </tr>
+        </table>
+      </div>
+      <div ng-controller="SocketCtrl" class="span6">
+        <h2>Socket.io Events 2</h2>
+        <p class="text-center">
+          <div class="btn-group">
+            <button ng-click="start()" class="btn">Start</button>
+            <button ng-click="stop()" class="btn">Stop</button>
+          </div>
+        </p>
+        <div ng-hide="messages.length" class="alert text-center">No Data</div>
+        <table ng-cloak ng-show="messages.length" class="table table-condensed table-bordered table-striped table-hover">
+          <tr ng-repeat="message in messages | orderBy:'date':true | limitTo:5">
+            <td>{{ message.date | date:'medium' }}</td>
+            <td>{{ message.data }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>

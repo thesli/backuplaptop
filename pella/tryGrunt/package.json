@@ -1,0 +1,25 @@
+{
+  "name": "what",
+  "version": "0.0.0",
+  "description": "no des whatsoever",
+  "main": "index.js",
+  "scripts": {
+    "test": "sp "
+  },
+  "author": "sliversniper",
+  "license": "MIT",
+  "dependencies": {
+    "express": "*",
+    "socket.io": "*",
+    "passport": "*"
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-coffee": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-js2coffee": "*",
+    "grunt-contrib-jade": "~0.7.0",
+    "grunt-jade": "~0.4.0"
+  }
+}

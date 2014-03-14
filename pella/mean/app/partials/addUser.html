@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="/app/css/partials/userInfo.css"/>
+
+<div class="userInfoFixedBar">
+    <div class="btn-toolbar">
+        <div class="btn-group">
+            <button class="btn"><a href="/#/selectuser"><i class="icon-backward"></i></a> Back</button>
+            <button class="btn" ng-click="reset()"><i class="icon-repeat"></i> Reset</button>
+            <button class="btn" ng-click="done()"><i class="icon-ok"></i> Done</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="fixBar-offset">
+    <div class="userInfo">
+        <div class="container">
+            <div class="row">
+                <span class="span3">
+                    <label>Username:</label><input type="text" ng-model="newUser.name" autofocus/>
+                </span>
+                <span class="span3">
+                    <label>ProfilePic</label>
+                    <!--{{ piclist }}-->
+                    <select chosen ng-model="preview" ng-options="pic for pic in piclist"></select>
+                </span>
+                <span class="span3">
+                    <img src="/app/img/icon/{{ preview }}.jpg" alt=""/>
+                </span>
+            </div>
+            <div class="row">
+                <span class="span3"><label>Age:</label><input type="number" ng-model="newUser.age"/></span>
+                <span class="span3"><label>Company:</label><input type="text" ng-model="newUser.company"></span>
+                <span class="span3"><label>Email:</label><input type="email" ng-model="newUser.email"></span>
+            </div>
+            <div class="row">
+                <span class="span3"><label>Address:</label><input type="text" ng-model="newUser.address"></span>
+                <span class="span3"><label>Balance:</label><input type="text" ng-model="newUser.balance"></span>
+                <span class="span3"><label>Gender:</label><select ng-options="g for g in gender " ng-model="newUser.gender"></select></span>
+            </div>
+            <div class="row">
+                <span class="span3"><label>Phone:</label><input type="text" ng-model="newUser.phone"></span>
+                <span class="span3"><label>Longitude:</label><input type="text" ng-model="newUser.longitude"/><label>latitude:</label><input
+                        type="text" ng-model="newUser.latitude"/></span>
+                <span class="span3"><label>About:</label><textarea ng-model="newUser.about" cols="30"
+                                                                   rows="10"></textarea></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,38 @@
+.userInfoFixedBar{
+    width:940px;
+    position: fixed;
+    z-index:100;
+}
+
+.userInfoFixedBar .btn-toolbar{
+    padding:0;
+    margin:0;
+}
+
+
+.userInfo .span3:hover,.span6:hover{
+    background-color: ghostwhite;
+}
+
+.userInfo label{
+    color:darkseagreen;
+}
+
+.userInfo .row{
+    border-bottom: ghostwhite inset;
+}
+
+#polaroid figure{
+    float:left; /*places the images in a horizontal line*/
+    position:relative; /*allows precise positioning of the tape in step 5- see support section below for more info*/
+    width:200px; /width of the images*/
+    margin:10px 20px; /*space between the images*/
+}
+
+
+.googlemap{
+    width: 220px;
+    height: 220px;
+    background-color: black;
+    z-index: 0;
+}

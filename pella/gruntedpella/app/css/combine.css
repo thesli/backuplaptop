@@ -1,0 +1,36 @@
+body{padding:0;margin:0}
+.container{padding-left:0;margin-left:0}
+.container .mainContent{position:relative;padding:10px}
+.chat{position:relative;right:5px;width:100%}
+.icon{width:30px;height:30px}
+.chatRightBar{z-index:999;background-color:#fcfcfc;position:fixed;width:250px;height:100%;top:0;right:0;overflow:hidden}
+.item{height:30px;overflow:hidden;text-overflow:ellipsis}
+.chatPanel{bottom:0;margin-left:10px;margin-right:10px;position:fixed;width:250px;height:300px;background:#f8f8ff;-webkit-box-shadow:0 0 10px rgba(0,0,0,0.5);-moz-box-shadow:0 0 10px rgba(0,0,0,0.5);box-shadow:0 0 10px rgba(0,0,0,0.5)}
+.topbar{background-color:#858585;width:250px;height:20px;position:absolute}
+span.topRight i.icon-remove-sign{float:right;padding-right:5px;padding-left:5px;text-align:center;vertical-align:middle;line-height:20px;color:#f8f8ff;font-size:10px}
+span.topRight i.icon-cog{float:right;padding-right:5px;padding-left:5px;text-align:center;vertical-align:middle;line-height:20px;color:#f8f8ff;font-size:10px}
+span.topLeft .username{float:left;padding-left:5px;color:#fff;line-height:20px;font-size:11px}
+.bottombar{position:absolute;bottom:0}
+.bottombar input{width:230px;height:20px;padding:0;margin:0;border:none}
+
+@import url("http://fonts.googleapis.com/css?family=Lato:400,100italic");
+body{margin-left:50px}
+#a{background:#c1e1ec}
+#b{background:#ff4d4d}
+#c{background:#ffb6c1}
+#d{background:#0c0}
+.articleOutter{width:400px;height:100px;position:relative;border-style:solid}
+.profilePic{position:absolute;width:50px;height:50px;padding:4px;border-style:solid;border-width:1px;border-color:#f8f8ff}
+.article{position:relative;padding-top:20px}
+.title{position:absolute}
+.username{font-family:'Oswald',sans-serif;text-decoration:none;color:#fff}
+
+.profilePic{width:48px;height:48px;padding:0;margin:0}
+.o{position:relative;height:47px;width:400px;padding:0;overflow:hidden;z-index:0;margin-bottom:0;border-right:solid 1px #eef}
+.q{position:absolute;left:50px;width:292px;border-color:#eef;border-width:1px;border-style:solid;font-size:11px;z-index:1000;color:#000;padding:3px;font-family:Lato;min-height:42px}
+.q>a{text-decoration:none;color:#4183c4}
+.a{position:absolute;right:0;width:50px;height:50px}
+.b{position:relative}
+.d{position:absolute;right:0;width:23px;height:23px;border-width:1px;border-color:#f8f8ff;border-style:solid}
+.o.last{border-bottom:solid 1px #eef}
+

@@ -1,0 +1,63 @@
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+*{
+	border-color:red;
+	border-width: 1px;
+	border-style: solid;
+}
+#abc{
+	width: 500px;
+	height: 500px;
+
+}
+.wrapper{
+	width:650px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+#cde{
+	width:500px;
+	height: 500px;
+	display: inline-block;
+	/*visibility: none;*/
+}
+#fgh{
+	width: 500px;
+	height: 500px;
+}
+
+
+</style>
+<body>
+
+<div class="wrapper">
+<header>Something at the header</header>
+<canvas id="abc"></canvas>
+<canvas id="cde"></canvas>
+<canvas id="fgh"></canvas>
+
+<footer>Here is something at the bottom</footer>
+</div>
+
+
+</body>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=2"></' + 'script>')</script>
+<script type="text/javascript">
+
+var c = document.getElementById("abc");
+var ctx = c.getContext("2d");
+
+var i = new Image();
+i.src = "img/1.jpg";
+i.width = 10;
+i.height = 10;
+i.onload = function(){
+	ctx.drawImage(i,10,10,10,10);
+}
+
+</script>
+</html>

@@ -1,0 +1,103 @@
+<html>
+<head>
+    <title></title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+    <div id="barContent">
+        <input type=""/ id="input">
+        <div id="submit"></div>
+    </div>
+    <div class="resultColumns">
+    </div>
+
+
+
+    <!--<div class="box first">-->
+        <!--<img class="snapshot"></img>-->
+        <!--<div class="boxContent">-->
+            <!--What the fuck is in here-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="box">-->
+        <!--<div class="snapshot"></div>-->
+        <!--<div class="boxContent">-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="box">-->
+        <!--<div class="snapshot"></div>-->
+        <!--<div class="boxContent">-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="box last">-->
+        <!--<div class="snapshot"></div>-->
+        <!--<div class="boxContent">-->
+        <!--</div>-->
+    <!--</div>-->
+
+</div>
+<div class="testcontent"></div>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+
+    function selectTheFirstEntry(){
+        $(".box:first").addClass("selected");
+    }
+    selectTheFirstEntry();
+    function moveDown(){
+        if(!$(".selected").hasClass("last")){
+        $(".selected").next(".box").addClass("selected");
+        $(".selected:first").removeClass("selected");
+        }
+    }
+    function moveUp(){
+        if(!$(".selected").hasClass("first")){
+        $(".selected").prev(".box").addClass("selected");
+        $(".selected:last").removeClass("selected");
+        }
+    }
+
+    function move(){
+        $(window).keydown(function(event){
+            if(event.which==38){
+                moveUp();
+                console.log("moveup");
+            }else if(event.which==40){
+                moveDown();
+                console.log("movedown");
+            }else if(event.which==13){
+                //Enter Pressed Go to link
+                var url =$(".selected>a").attr("href");
+                window.location = url;
+            }
+        })
+    }
+
+    move();
+    $("#input").val("");
+    $("#input").focus();
+   $("#input").keyup(function(event){
+       if(event.which!=38&&event.which!=40&&event.which!=13){
+           var query = $("#input").val();
+           var replacedquery = query.replace(" ","+");
+           if(replacedquery!=""){
+           $(".resultColumns").load("testdb.php?query=" + replacedquery,function(){
+               $(".box:first").addClass("first");
+               $(".box:last").addClass("last");
+               selectTheFirstEntry();
+           });
+           }else{
+               $(".resultColumns").html("");
+           }
+       }
+   });
+
+
+
+</script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=2"></' + 'script>')</script>
+
+</html>

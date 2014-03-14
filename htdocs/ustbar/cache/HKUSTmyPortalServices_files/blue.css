@@ -1,0 +1,93 @@
+/* Tab Bar */
+.myvt-page-blue #tab-bar {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/blue/tab_base_t.gif);
+}
+.myvt-page-blue .myvt-tab-inactive, .myvt-page-blue #myvt-tab-base-focused {
+	border-bottom-color: #5E689B; 
+}
+.myvt-page-blue #tab-base {
+	background-color: #636FAD;
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/blue/tab_base_bg.gif);
+}
+.myvt-page-blue #left-column, .myvt-page-blue #shared-column-spacer, .myvt-page-blue #shared-column-border-bottom {
+	background-color: #636FAD;
+}
+.myvt-page-blue #shared-column-border-bottom {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/blue/sc_b.gif);
+}
+.myvt-page-blue #shared-column {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/blue/sc_r.gif);
+}
+.myvt-page-blue #tab-toolbar {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/blue/tab_toolbar_bg.gif);
+	border-bottom-color: #8B95C5;
+	background-color: #AEB7E1;
+}
+.myvt-page-blue #tab-breadcrumbs {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/blue/tab_toolbar_tl.gif);
+}
+.myvt-page-blue #greeting {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/blue/my_vt_logo_bottom.gif);
+}
+.myvt-page-blue .myvt-channel-titlebar {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/blue/channel_titlebar_tl.gif);
+	background-color: #909BCD;
+	border-bottom-color: #8B95C5;
+}
+.myvt-page-blue .myvt-channel-titlebar table {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/blue/channel_titlebar_tr.gif);
+}
+.myvt-page-blue .myvt-channel-border-tl {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/blue/channel_tl.gif);
+}
+.myvt-page-blue .myvt-channel-border-tr {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/blue/channel_tr.gif);
+}
+.myvt-page-blue .myvt-channel-border-bl {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/blue/channel_bl.gif);
+}
+.myvt-page-blue .myvt-channel-border-br {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/blue/channel_br.gif);
+}
+.myvt-page-blue #shared-column .myvt-channel-titlebar {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/blue/sc_channel_titlebar_tl.gif);
+}
+.myvt-page-blue #shared-column .myvt-channel-titlebar table {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/blue/sc_channel_titlebar_tr.gif);
+}
+.myvt-page-blue #shared-column .myvt-channel-border-tl {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/blue/sc_channel_tl.gif);
+}
+.myvt-page-blue #shared-column .myvt-channel-border-tr {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/blue/sc_channel_tr.gif);
+}
+.myvt-page-blue #shared-column .myvt-channel-border-bl {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/blue/sc_channel_bl.gif);
+}
+.myvt-page-blue #shared-column .myvt-channel-border-br {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/blue/sc_channel_br.gif);
+}
+/* Subtabs */
+.myvt-page-blue #subtabs-border-bottom {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/blue/subtabs_br.gif);
+}
+.myvt-page-blue #subtabs-container {
+	background-color: #636FAD;
+}
+.myvt-page-blue #subtabs-heading {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/blue/subtabs_tr.gif);
+}
+.myvt-page-blue #subtabs-items .subtabs-items-first {
+	background: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/blue/subtabs_tl.gif);
+	border-bottom: 1px solid #5E689B;
+}
+.myvt-page-blue #subtabs-items .subtabs-items-inactive {
+	background-color: #AEB7E1;
+	border-right: 1px solid #5E689B;
+}
+.myvt-page-blue #subtabs-items .subtabs-items-last {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/blue/subtabs_bl.gif);
+}
+.myvt-page-blue #subtabs-items .subtabs-items-middle {
+	border-bottom: 1px solid #5E689B; border-left: 1px solid #5E689B;
+}

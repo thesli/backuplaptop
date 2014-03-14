@@ -1,0 +1,93 @@
+/* Tab Bar */
+.myvt-page-orange #tab-bar {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/orange/tab_base_t.gif);
+}
+.myvt-page-orange .myvt-tab-inactive, .myvt-page-orange #myvt-tab-base-focused {
+	border-bottom-color: #B66B3E; 
+}
+.myvt-page-orange #tab-base {
+	background-color: #CF743D;
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/orange/tab_base_bg.gif);
+}
+.myvt-page-orange #left-column, .myvt-page-orange #shared-column-spacer, .myvt-page-orange #shared-column-border-bottom {
+	background-color: #CF743D;
+}
+.myvt-page-orange #shared-column-border-bottom {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/orange/sc_b.gif);
+}
+.myvt-page-orange #shared-column {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/orange/sc_r.gif);
+}
+.myvt-page-orange #tab-toolbar {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/orange/tab_toolbar_bg.gif);
+	border-bottom-color: #DE986D;
+	background-color: #F9BA95;
+}
+.myvt-page-orange #tab-breadcrumbs {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/orange/tab_toolbar_tl.gif);
+}
+.myvt-page-orange #greeting {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/orange/my_vt_logo_bottom.gif);
+}
+.myvt-page-orange .myvt-channel-titlebar {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/orange/channel_titlebar_tl.gif);
+	background-color: #E99E72;
+	border-bottom-color: #DE986D;
+}
+.myvt-page-orange .myvt-channel-titlebar table {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/orange/channel_titlebar_tr.gif);
+}
+.myvt-page-orange .myvt-channel-border-tl {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/orange/channel_tl.gif);
+}
+.myvt-page-orange .myvt-channel-border-tr {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/orange/channel_tr.gif);
+}
+.myvt-page-orange .myvt-channel-border-bl {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/orange/channel_bl.gif);
+}
+.myvt-page-orange .myvt-channel-border-br {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/orange/channel_br.gif);
+}
+.myvt-page-orange #shared-column .myvt-channel-titlebar {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/orange/sc_channel_titlebar_tl.gif);
+}
+.myvt-page-orange #shared-column .myvt-channel-titlebar table {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/orange/sc_channel_titlebar_tr.gif);
+}
+.myvt-page-orange #shared-column .myvt-channel-border-tl {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/orange/sc_channel_tl.gif);
+}
+.myvt-page-orange #shared-column .myvt-channel-border-tr {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/orange/sc_channel_tr.gif);
+}
+.myvt-page-orange #shared-column .myvt-channel-border-bl {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/orange/sc_channel_bl.gif);
+}
+.myvt-page-orange #shared-column .myvt-channel-border-br {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/orange/sc_channel_br.gif);
+}
+/* Subtabs */
+.myvt-page-orange #subtabs-border-bottom {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/orange/subtabs_br.gif);
+}
+.myvt-page-orange #subtabs-container {
+	background-color: #CF743D;
+}
+.myvt-page-orange #subtabs-heading {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/orange/subtabs_tr.gif);
+}
+.myvt-page-orange #subtabs-items .subtabs-items-first {
+	background: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/orange/subtabs_tl.gif);
+	border-bottom: 1px solid #B66B3E;
+}
+.myvt-page-orange #subtabs-items .subtabs-items-inactive {
+	background-color: #F9BA95;
+	border-right: 1px solid #B66B3E;
+}
+.myvt-page-orange #subtabs-items .subtabs-items-last {
+	background-image: url(/media/edu/vt/portal/layout/TabPageColumn/InlineCustomization/images/orange/subtabs_bl.gif);
+}
+.myvt-page-orange #subtabs-items .subtabs-items-middle {
+	border-bottom: 1px solid #B66B3E; border-left: 1px solid #B66B3E;
+}

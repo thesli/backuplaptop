@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title></title>
+	
+</head>
+<body>
+
+<input type="submit" id="t" onclick="g()">
+
+</body>
+<script type="text/javascript">
+	function g(){
+		navigator.geolocation.getCurrentPosition(s);
+		alert("something");
+	}
+	function s(){
+		alert(postion.coords.latitude);
+		alert(postion.coords.longtitude);
+	}
+	</script>
+</html>

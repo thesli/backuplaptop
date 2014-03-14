@@ -1,0 +1,79 @@
+<link rel="stylesheet" href="/app/css/partials/eventInfo.css"/>
+
+<div class="eventInfoFixedBar">
+    <div class="btn-toolbar">
+        <div class="btn-group">
+            <button class="btn" ng-click="joinEvent()">
+                Join
+            </button>
+            <botton class="btn">WatchList</botton>
+        </div>
+        <div class="btn-group">
+            <button class="btn">Report</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="fixBar-offset">
+
+    <div class="eventInfo">
+        <div class="container">
+            <div class="row">
+                <div class="span3">
+                    <label for="">Name:</label>
+                    <a href="/#/events/info/{{ eventInfo._id }}"><span>{{ eventInfo.name }}</span></a>
+                </div>
+                <div class="span3"><label for="">Time:</label><span>{{ eventInfo.time }}</span></div>
+                <div class="span3">
+                    <label for="">Date:</label>
+                    <span ng-repeat="d in eventInfo.date">
+                        {{ d }}
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span3">
+                    <label for="">Constraints:</label>
+
+                    <div ng-repeat="c in eventInfo.constraint">
+                        {{ c }}
+                    </div>
+                </div>
+                <div class="span3">
+                    <label for="">location</label>
+                    <span>
+                        {{ eventInfo.location.real }}
+                    </span>
+                </div>
+                <div class="span3">
+                    <label for="">Inquiry:</label>
+                    <span ng-repeat="i in eventInfo.inquiry">
+                        {{ i }}
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span3">
+                    <label for="">Links:</label>
+                    <a href="{{ eventInfo.link }}">link 1</a>
+                </div>
+                <div class="span3" ng-if="eventInfo">
+                    <label for="">QR to Join</label>
+                    <qr text="addEventLink"></qr>
+                </div>
+                <div class="span3" ng-if="eventInfo&&currentUser">
+                    <label for="">Map:</label>
+                    <gmap lat="eventInfo.location.latitude" lng="eventInfo.location.longitude"
+                          mlat="currentUser.latitude" mlng="currentUser.longitude"></gmap>
+                </div>
+            </div>
+            <div class="row">
+                <label for="">Event Template:</label>
+                <div ng-if="eventInfo"><fullcal event="eventInfo.eventTemplate.events"></fullcal></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+

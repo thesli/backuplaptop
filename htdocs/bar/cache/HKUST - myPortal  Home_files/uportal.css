@@ -1,0 +1,117 @@
+a.uportal-navigation-category{
+	color : Black;
+	font-weight : bold;
+}
+
+a.uportal-navigation-category:visited{
+color : Black;
+font-weight : bold;
+}
+A.uportal-navigation-category:hover{
+color : #993333;
+font-weight : bold;
+text-decoration: underline;
+}
+.uportal-navigation-category-selected{
+font-weight : bold;
+color : #000000;
+}
+A.uportal-navigation-channel{
+color : Black;
+}
+A.uportal-navigation-channel:visited{
+color : Black;
+}
+A.uportal-navigation-channel:hover{
+color : #993333;
+text-decoration: underline;
+}
+.uportal-navigation-channel-selected{
+background : Black;
+color : White;
+}
+.uportal-text{
+	color : Black;
+}
+.uportal-text-small{
+	color : Black;
+}
+.uportal-button{
+	color : Black;
+}
+.uportal-label{
+	color : Black;
+	font-weight : bold;
+}
+.uportal-input-text{
+	color : Black;
+}
+.uportal-text-reversed{
+	color : White;
+}
+.uportal-crumbtrail{
+	color : #666666;
+}
+.uportal-copyright{
+	color : #000000;
+	font-style : italic;
+}
+.uportal-channel-text{
+	color : #000000;
+}
+.uportal-channel-title{
+	font-weight : bold;
+}
+.uportal-channel-title-reversed{
+	color : #663333;
+	font-weight : bold;
+}
+.uportal-channel-subtitle {
+	font-weight : bold;
+}
+.uportal-channel-subtitle-reversed{
+	color : #333333;
+	font-weight : bold;
+}
+.uportal-channel-emphasis{
+	font-weight : bold;
+}
+.uportal-channel-strong{
+	font-weight : bold;
+}
+.uportal-channel-code{
+	color : #000000;
+}
+.uportal-channel-copyright{
+	font-style : italic;
+}
+.uportal-channel-warning{
+	color : #993333;
+}
+.uportal-channel-error{
+	color : #993333;
+}
+.uportal-channel-table-caption{
+	color : #993333;
+	font-weight : bold;
+	text-align: center;
+}
+.uportal-channel-table-header {
+	color : #993333;
+	font-weight : bold;
+	text-align: left;
+}
+.uportal-channel-table-row-even{ }
+.uportal-channel-table-row-odd { background-color : #EEEEEE; }
+.uportal-background { background-color : #000000; }
+.uportal-background-dark { background-color : #999999; }
+.uportal-background-med { background-color : #CCCCCC; }
+.uportal-background-light { background-color : #EEEEEE;}
+.uportal-background-content { background-color : #FFFFFF; }
+.uportal-background-highlight { background-color : #FFFF99; }
+.uportal-background-shadow { background-color : #000000; }
+.uportal-background-page { background-color : #FFFFFF; }
+.uportal-background-semidark { background-color: #AAAAAA; }
+.uportal-background-selected { background-color : #FCAB64; }
+.uportal-background-neutral-dark { background-color: #666666; }
+.uportal-background-neutral-light { background-color: #CCCCCC; }

@@ -1,0 +1,18 @@
+0.13 Beta
+Fixed Login problem due to Xanga website change.
+
+0.13 Beta
+Fixed Login problem due to Xanga website change.
+Fixed backup failure when text format is irregular.
+
+0.12 Beta
+Better Regular expression to output better data array and improve compatibility.
+Fixed PHP error message appear when no entry in site.
+Fixed backup region selection error.
+Xanga Entry Unique ID added (array $id in getdata.inc.php).
+
+0.11 Beta
+HTML error in index.php and login error in loginxanga.inc.php fixed
+
+0.1 Beta
+First Release Function: Backup entry only

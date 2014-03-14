@@ -1,0 +1,9 @@
+{
+    "name":"trypassport",
+    "author":"sliversniper",
+    "dependencies":{
+        "socket.io":"*",
+        "express":"*",
+        "passport":"*"
+    }
+}

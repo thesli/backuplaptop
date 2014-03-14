@@ -1,0 +1,15 @@
+{
+    "name": "mean-seed",
+    "version": "0.0.1",
+    "author": "Fredrik <ique@3h.se>",
+    "description": "A seed application for the MEAN stack.",
+    "dependencies": {
+        "express": "*",
+        "mongoskin": "*",
+        "faye": "*"
+    },
+    "license": "MIT",
+    "engines": {
+        "node": ">=0.6"
+    }
+}
